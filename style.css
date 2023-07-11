@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Arsenal:wght@400;700&family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #393e46;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container-fluid .row {
+  justify-content: space-between;
+}
+body .container-fluid .row .editor-col {
+  padding: 0;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+body .container-fluid .row .editor-col .editor-header {
+  background-color: #00adb5;
+  border-radius: 10px 10px 0 0;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+body .container-fluid .row .editor-col .editor-header .editor-title {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+body .container-fluid .row .editor-col .editor-body #editor {
+  padding: 0.5rem;
+  width: 100%;
+  min-height: 16rem;
+  background-color: #eeeeee;
+  border: none;
+  outline: none;
+  font-family: "ABeeZee", sans-serif;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
+}
+body .container-fluid .row .preview-col {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+body .container-fluid .row .preview-col .preview-container .preview-header {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  border-radius: 10px 10px 0 0;
+  background-color: #00adb5;
+  padding: 0.5rem;
+}
+body .container-fluid .row .preview-col .preview-container .preview-header .preview-title {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+body .container-fluid .row .preview-col .preview-container .preview-body #preview {
+  padding: 1rem;
+  min-width: 100%;
+  min-height: 16rem;
+  background-color: #eeeeee;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
+  overflow: hidden;
+}
+body .credits,
+body a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 0;
+  color: #222831;
+}/*# sourceMappingURL=style.css.map */

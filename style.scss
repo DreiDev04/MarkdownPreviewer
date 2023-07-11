@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Arsenal:wght@400;700&family=Raleway&display=swap");
+
+$primary: #393e46;
+$secondary: #00adb5;
+$secondary-light: #eeeeee;
+$text-color: #222831;
+$ff-primary: "Raleway", sans-serif;
+$ff-bold: "Arsenal", sans-serif;
+$ff-secondary: "ABeeZee", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // outline: solid red 1px;
+}
+
+body {
+  background-color: $primary;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container-fluid {
+    .row {
+      justify-content: space-between;
+
+      .editor-col {
+        padding: 0;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        .editor-header {
+          background-color: $secondary;
+          border-radius: 10px 10px 0 0;
+          padding: 0.5rem;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+          .editor-title {
+            font-family: $ff-bold;
+            font-weight: 700;
+            font-size: 1.5rem;
+          }
+        }
+        .editor-body {
+          #editor {
+            padding: 0.5rem;
+            width: 100%;
+            min-height: 16rem;
+            background-color: $secondary-light;
+            border: none;
+            outline: none;
+            font-family: $ff-secondary;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
+          }
+        }
+      }
+      .preview-col {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        .preview-container {
+          .preview-header {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+            border-radius: 10px 10px 0 0;
+            background-color: $secondary;
+            padding: 0.5rem;
+            .preview-title {
+              font-family: $ff-bold;
+              font-weight: 700;
+              font-size: 1.5rem;
+            }
+          }
+          .preview-body {
+            #preview {
+              padding: 1rem;
+              min-width: 100%;
+              min-height: 16rem;
+              background-color: $secondary-light;
+              border-radius: 0 0 10px 10px;
+              box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+  .credits,
+  a {
+    color: $secondary-light;
+    text-decoration: none;
+  }
+}
+
+h2 {
+  margin-bottom: 0;
+  color: $text-color;
+}
